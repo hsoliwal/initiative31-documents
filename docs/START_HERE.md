@@ -44,6 +44,33 @@ The [final report](../report/overall_report.md) says the custom-widget/Skia demo
 - [meetings/](../meetings/): dated presentations; these record the state at a meeting, not necessarily the final conclusion.
 - [LICENSE](../LICENSE): the repository's retained Eclipse Public License 2.0 text.
 
+## From a report to the right implementation
+
+Repository names alone can be misleading: the early VCL route and the final custom-widget demonstrator are separate experiments. Use the report section first, then the implementation's own instructions.
+
+| Investigation | Public implementation entry point | Evidence in this collection |
+| --- | --- | --- |
+| Final custom-widget/Skia demonstrator | [`prototype-skija`](https://github.com/swt-initiative31/prototype-skija), including its setup and state notes | [Skia: Developed](../report/overall_report.md#skia-developed) and [custom-drawn assessment](../results/custom.md) |
+| Skia drawing on a canvas with existing SWT | [`skija-canvas`](https://github.com/swt-initiative31/skija-canvas) | [Skia-based GC in SWT](../report/overall_report.md#skia-based-gc-in-swt) |
+| Earlier SWT-to-VCL experiment | [`prototype-skiavcl`](https://github.com/swt-initiative31/prototype-skiavcl) | [VCL and UNO achievements](../results/skia_vcl.md#achievements) |
+| LibreOffice-side VCL extraction | [`prototype-skiavcl-libreoffice`](https://github.com/swt-initiative31/prototype-skiavcl-libreoffice), with the historical `vcl-4-swt` experiment | [Tight Integration of VCL into LibreOffice](../results/skia_vcl.md#tight-integration-of-vcl-into-libreoffice) |
+| GTK across operating systems | [`prototype-gtk`](https://github.com/swt-initiative31/prototype-gtk) | [GTK: Dropped](../report/overall_report.md#gtk-dropped) and [GTK assessment](../results/gtk.md) |
+| SWT implemented through Swing | [`prototype-swing`](https://github.com/swt-initiative31/prototype-swing) | [Swing: Dropped](../report/overall_report.md#swing-dropped) and [Swing assessment](../results/swing.md) |
+
+These are upstream research repositories, not installation instructions for this document collection. The two VCL repositories were archived at the 2026-10-14 source check. Older assessment links use names such as `prototype-skia` and `prototype-skia-libreoffice`; retain those historical citations when discussing the original evidence, and use the canonical repository names above for navigation. Check the chosen repository's branch and revision before reproducing an experiment.
+
+## What remains before production
+
+The final report's [Content / Steps](../report/overall_report.md#content--steps) identifies five concrete areas. This index makes the distinction between the demonstrated result and proposed production work explicit:
+
+- **Event handling:** replace more OS-provided keyboard, mouse, focus, and selection behavior
+- **One canvas:** replace the native backing widget for each custom widget with a shared native canvas, including refresh-area calculations
+- **Full GC:** complete drawing API functionality beyond the subset needed by the demonstrator
+- **Performance:** address the extra rendering-buffer copy and validate platform-specific rendering paths
+- **Widget finalization:** complete relevant capabilities beyond preliminary widget implementations
+
+These are the report's proposed steps, not a newly approved roadmap. Its [Capacity / Effort](../report/overall_report.md#capacity--effort) estimate belongs to that scope and those assumptions; it is not a current delivery promise.
+
 ## What this fork adds
 
 The fork adds this reader map, a compact reference, and worked research/review examples. It does not change the original research, claim its authorship, introduce a new prototype, or turn an assessment into a support guarantee.
