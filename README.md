@@ -1,3 +1,7 @@
+> **New to Initiative 31?** Start with the [reader guide](docs/START_HERE.md), use the [research cheat sheet](docs/CHEATSHEET.md), or follow a [worked reading example](docs/READING_EXAMPLES.md).
+>
+> This is the public `hsoliwal` fork of [swt-initiative31/documents](https://github.com/swt-initiative31/documents). The added guides help navigate the published research; the original project report, assessments, slides, and license remain unchanged. The upstream introduction follows.
+
 # Initiative 31: Documents
 
 This repository contains documents persisting meeting slides, insights, and assessments of the Initiative 31.
