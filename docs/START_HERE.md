@@ -6,6 +6,8 @@ This is a research and documentation repository. You do not need a compiler, Jav
 
 [Research cheat sheet](CHEATSHEET.md) · [Worked reading examples](READING_EXAMPLES.md) · [Original README](../README.md) · [Final report](../report/overall_report.md)
 
+[Complete collection map](CONTENT_MAP.md) · [Evidence and review](EVIDENCE_AND_REVIEW.md)
+
 ## Choose your first ten minutes
 
 | Your question | Start here | What to look for |
@@ -39,7 +41,7 @@ The [final report](../report/overall_report.md) says the custom-widget/Skia demo
 - [results/skia_vcl.md](../results/skia_vcl.md): the earlier VCL/UNO investigation and its constraints.
 - [results/gtk.md](../results/gtk.md) and [results/gtkCustomTheme.md](../results/gtkCustomTheme.md): GTK investigation and theming notes.
 - [results/swing.md](../results/swing.md): Swing achievements, partial support, missing functionality, and assessment.
-- [results/skia/results.md](../results/skia/results.md): additional Skia investigation notes.
+- [results/skia/results.md](../results/skia/results.md): early LibreOffice VCL/UNO design notes, including proposed single-process integration; distinct from the later custom-widget demonstrator.
 - [results/_template.md](../results/_template.md): the existing structure for a technology assessment.
 - [meetings/](../meetings/): dated presentations; these record the state at a meeting, not necessarily the final conclusion.
 - [LICENSE](../LICENSE): the repository's retained Eclipse Public License 2.0 text.

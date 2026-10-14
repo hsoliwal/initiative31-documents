@@ -10,6 +10,8 @@ It particularly includes the **[final project report](report/overall_report.md).
 
 ## Reading paths
 
+- [Browse every document group and its coverage](docs/CONTENT_MAP.md)
+- [Separate architecture intent, reported results, and verification](docs/EVIDENCE_AND_REVIEW.md)
 - [Find the implementation behind a result](docs/START_HERE.md#from-a-report-to-the-right-implementation)
 - [Understand the remaining production work](docs/START_HERE.md#what-remains-before-production)
 - [Check a claim against its source](docs/CHEATSHEET.md#claim-checking-workflow)
