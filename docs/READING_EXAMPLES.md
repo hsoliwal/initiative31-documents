@@ -57,3 +57,34 @@ Not checked: historical prototype build/runtime behavior
 ```
 
 Keep presentation files and images unchanged when the correction only concerns Markdown. Include a before/after explanation for wording changes that might alter the meaning of a historical result.
+
+## Example 5: complete an assessment without overstating evidence
+
+The existing [assessment template](../results/_template.md) separates Technology, Contributors, Achievements, Insights, Risks, and Conclusion. Use those sections as an evidence pipeline rather than filling every heading with positive findings.
+
+Suppose your reading finds a screenshot of one control and a note about an unresolved integration issue. This is a hypothetical review exercise, not a new claim about any candidate:
+
+| Template section | Defensible entry | Evidence still needed |
+| --- | --- | --- |
+| Achievements | The source illustrates this control in this example | Revision, environment, and procedure for reproducing it |
+| Insights | The source identifies an integration constraint | Whether it applies to the same branch and platform |
+| Risks | Broader widget coverage remains unestablished by this example | A defined coverage inventory and comparable tests |
+| Conclusion | The evidence supports a narrow demonstration | Separate evidence before claiming full SWT compatibility |
+
+Do not move a risk into Achievements because a later screenshot looks promising. Conversely, missing evidence is not evidence that a feature cannot work. If the report and assessment appear to disagree, record their dates and scopes before proposing a correction.
+
+### A maintainer's update protocol
+
+1. Classify the change: navigation repair, wording clarification, correction to a historical statement, or new experimental evidence.
+2. For navigation, fix the link and check exact case, encoded spaces, and destination heading. Keep the original claim unchanged.
+3. For a historical correction, cite the original passage and public evidence supporting the correction; explain why the meanings differ.
+4. For new evidence, label its date, revision, method, and limitations. Keep it distinguishable from the original investigation instead of silently updating old findings.
+5. Update the [reader map](START_HERE.md) only if the reading route changes, and the [cheat sheet](CHEATSHEET.md) only if commands or evidence categories change.
+6. Review images and captions together with their surrounding text. A screenshot alone does not establish event handling, accessibility, compatibility, or performance.
+
+### FAQ: where should a new result go?
+
+- **Another source-reading note?** Extend a worked example with its exact public source and scope.
+- **A reproduced prototype observation?** Use the assessment structure, including environment and limitations, and follow the target repository's contribution process.
+- **A changed project conclusion?** Propose it explicitly with supporting evidence; do not rewrite the historical final report as though the new conclusion existed at publication.
+- **A build failure in a linked prototype?** Record it against that implementation revision; this document collection has no application build to repair.
