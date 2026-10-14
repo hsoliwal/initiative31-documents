@@ -8,6 +8,12 @@ This repository contains documents persisting meeting slides, insights, and asse
 
 It particularly includes the **[final project report](report/overall_report.md).**
 
+## Reading paths
+
+- [Find the implementation behind a result](docs/START_HERE.md#from-a-report-to-the-right-implementation)
+- [Understand the remaining production work](docs/START_HERE.md#what-remains-before-production)
+- [Check a claim against its source](docs/CHEATSHEET.md#claim-checking-workflow)
+
 ## General Information
 
 Some general information about the initiative, it's motivation, goals and setup can be found in the [kick-off slides](meetings/2024-05-17%20Kick-Off.pptx).
