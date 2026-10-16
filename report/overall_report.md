@@ -23,9 +23,9 @@ The primary result of Initiative 31 is the successful demonstration of the feasi
 The report consists of the following parts:
 - [Goal](#goal): the actual goal of Initiative 31
 - [Setup](#setup): how the project was initiated and conducted from an organizational perspective
-- [Technologies](#rechnologies): the technologies that were evaluated
+- [Technologies](#technologies): the technologies that were evaluated
 - [Results](#results): the core results of Initiative 31
-- [Realization Plan](#realization_plan): a plan for an actual realization of a new SWT implementation based on the results of Initiative 31
+- [Realization Plan](#realization-plan): a plan for an actual realization of a new SWT implementation based on the results of Initiative 31
 
 All information about the project and the artifacts developed in it are available in the repositories of the according GitHub organization: https://github.com/swt-initiative31/
 

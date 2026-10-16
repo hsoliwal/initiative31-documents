@@ -57,3 +57,44 @@ Not checked: historical prototype build/runtime behavior
 ```
 
 Keep presentation files and images unchanged when the correction only concerns Markdown. Include a before/after explanation for wording changes that might alter the meaning of a historical result.
+
+## Example 5: reconcile an early assessment with the final report
+
+Use [Skia/VCL](../results/skia_vcl.md) and the [final report](../report/overall_report.md)
+as separate evidence sources. Record a claim from each with its heading and
+commit, then ask whether they discuss the same implementation and project phase.
+A partial VCL/UNO example and the later custom-drawn demonstrator should not be
+combined into one implementation's feature list.
+
+For each claim, keep these fields together:
+
+- Original wording or a clearly marked paraphrase.
+- Document, heading, and commit-pinned link.
+- Technology and phase being discussed.
+- The limitation stated alongside the result.
+- Whether the final report retains, supersedes, or does not address it.
+
+If the sources do not resolve the question, record it as unresolved. The date
+of a document alone does not make every statement in it supersede all earlier
+technical detail. Preserve the original assessments when adding a reading note.
+
+### Capture the exact report revision
+
+In an existing clone, these read-only commands print a stable report URL and
+show the text at that commit:
+
+Use a clone of `hsoliwal/initiative31-documents` and a commit already
+available on that GitHub remote. A local unpublished commit or a commit from
+another repository can produce a URL that does not exist. Uncommitted edits are
+not captured. Open the printed URL and verify its contents before sharing it.
+
+```sh
+revision=$(git rev-parse HEAD)
+printf 'https://github.com/hsoliwal/initiative31-documents/blob/%s/report/overall_report.md\n' "$revision"
+git show "$revision":report/overall_report.md
+```
+
+The commit identifies the repository snapshot, not necessarily the meeting date
+or date of the experiment described. Record those dates separately when the
+source provides them. This workflow requires no slide conversion or prototype
+build and makes no claim that the reported experiments were reproduced.
